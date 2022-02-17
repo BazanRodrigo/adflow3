@@ -1,0 +1,170 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  outline: 0;
+  font-family: sans-serif;
+  max-width: 1280px;
+}
+
+nav {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h2 {
+  margin: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+nav div a {
+  margin: 1rem;
+  text-decoration: none;
+  color: #888;
+}
+
+.active {
+  color: #222;
+  font-weight: 600;
+}
+
+.main-container {
+  margin: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.main-container img {
+  margin-top: 3rem;
+}
+
+.text-container {
+  text-align: end;
+  max-width: 600px;
+  width: 70%;
+}
+
+.text-container h1 {
+  font-size: 43px;
+  margin: 4rem 0;
+}
+
+.text-container p {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+form {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.custom-file-upload {
+  margin: 1rem;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  font-size: 18px;
+  border: none;
+  color: #eee;
+  background-color:rgb(83, 206, 194);
+  text-align: center;
+  cursor: pointer;
+  min-width: 200px;
+  max-width: 200px;
+  max-height: 68.8px;
+}
+
+form input, form button {
+  margin: 1rem;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  font-size: 18px;
+  border: none;
+  color: #eee;
+  background-color:rgb(83, 206, 194);
+  text-align: center;
+  cursor: pointer;
+  min-width: 200px;
+  max-width: 200px;
+  max-height: 68.8px;
+}
+
+#labelFileUploaded {
+  margin: 1rem 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: #888;
+  font-weight: 500;
+  letter-spacing: 1.15px;
+}
+
+#content-loader {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0003;
+}
+
+#loader {
+  display: none;
+  pointer-events: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-top-color:rgba(89, 220, 207, 0.898);
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-device-width: 800px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .text-container h1 {
+    font-size: 32px;
+  }
+  
+  .text-container p {
+    font-size: 14px;
+  }
+
+  .main-container img {
+    margin: 1rem auto;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+}
